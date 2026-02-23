@@ -1,0 +1,34 @@
+version: 1
+project:
+  id: 8cc2c030-2a18-4d73-b514-e60557d3b28b
+  title: Komputasi Aljabar Linier
+  description: Komputasi Aljabar Linier Adalah...
+
+  authors:
+    - name: Wildan Haydar Amru
+      email: whaydaramru@gmail.com
+      github: Nacxht
+      # linkedin: https://www.linkedin.com/in/whaydaramru
+      affiliations:
+        - id: utm
+          institution: Universitas Trunojoyo Madura
+          department: Teknik Informatika
+      
+  toc:
+    - file: src/komputasi_aljabar_linier.md
+    - file: src/1_persamaan_linier/1_persamaan_linier.md
+      children:
+        - file: src/1_persamaan_linier/2_geogebra.md
+  
+  # abaikan virtual environment anda (jika ada)
+  exclude:
+    - _venv/**
+    
+  # keywords: []
+  # github:
+site:
+  template: book-theme
+  # title:
+  # options:
+  #   favicon: favicon.ico
+  #   logo: site_logo.png
