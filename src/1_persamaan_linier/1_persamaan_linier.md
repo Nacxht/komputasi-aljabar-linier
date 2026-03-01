@@ -11,7 +11,7 @@ Setiap suku pada persamaan linier mengandung konstanta atau perkalian konstanta 
 
 Persamaan linier memiliki ciri-ciri tertentu. Dengan melihat dari ciri-ciri tersebut, kita dapat mengidentifikasi apakah suatu persamaan termasuk persamaan linier atau bukan. Berikut adalah ciri-ciri dari persamaan linier:
 
-1. Persamaan akan memiliki pangkat satu.
+1. Persamaan hanya boleh memiliki **pangkat satu**.
 2. Persamaan linier tidak memiliki perkalian variabel.
 3. Persamaan linier biasanya terdiri dari dua ruas yang dihubungkan dengan tanda sama dengan (=).
 4. Penjumlahan, pengurangan, perkalian, dan pembagian pada kedua ruas tidak akan mengubah bentuk nilai persamaan.
