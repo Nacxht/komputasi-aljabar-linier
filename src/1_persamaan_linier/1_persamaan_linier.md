@@ -1,6 +1,6 @@
 ---
 title: Persamaan Linier
-date: 2026-2-22
+date: 2026-02-22
 ---
 
 Persamaan linier adalah sebuah persamaan aljabar, yang tiap sukunya menganndung **konstanta**, atau perkalian konstanta dengan **variabel tunggal**. Persamaan ini dapat dikatakan **linier** dikarenakan hubungan matematis ini dapat digambarkan sebagai garis lurus dalam **Sistem Koordinat Kartesius**.
@@ -56,7 +56,7 @@ Sesuai namanya, persamaan linier satu variabel **hanya memiliki satu variabel** 
 
 Secara umum, bentuk persamaan linier satu variabel jika ditulis secara matematik adalah:
 
-```{math} Contoh sistem persamaan satu variabel
+```{math}
 :label: bentuk_umum_persamaan_satu variabel
 
 ax + b = 0
@@ -73,7 +73,7 @@ Persamaan ini adalah sistem persamaan yang memiliki variabel berjumlah dua denga
 
 Secara matematis, persamaan linier dua variabel bisa dituliskan seperti:
 
-```{math} Bentuk umum penulisan persamaan dua variabel
+```{math}
 :label: bentuk_umum_persamaan_dua_variabel
 
 ax + by = c
@@ -95,7 +95,7 @@ Simpelnya, sistem persamaan ini adalah bentuk perluasan dari persamaan dua varia
 
 Sistem persamaan ini akan terasa berguna ketika digunakan dalam mendirikan bangunan agar lebih presisi. Secara umum, penulisan persamaan linier tiga variabel dapat ditulis sebagai berikut:
 
-```{math} Bentuk umum penulisan persamaan tiga variabel
+```{math}
 :label: bentuk_umum_persamaan_tiga_variabel
 
 ax + by + cy = d
@@ -114,13 +114,13 @@ Metode subtitusi bekerja dengan cara mengubah suatu variabel dengan variabel dar
 
 > Tentukan nilai variabel {math}`x` dan {math}`y` dari kedua persamaan berikut dengan menggunakan metode substitusi matematika!
 
-```{math} Persamaan pertama
+```{math}
 :label: persamaan_subtitusi_1
 
 2x + 4y = 28
 ```
 
-```{math} Persamaan kedua
+```{math}
 :label: persamaan_subtitusi_2
 
 3x + 2y = 22
@@ -133,7 +133,7 @@ Metode subtitusi bekerja dengan cara mengubah suatu variabel dengan variabel dar
   > Pilih salah satu persamaan yang akan dipindahkan elemennya. Sebagai contoh disini saya memilih [persamaan pertama](#persamaan_subtitusi_1).
 
 
-  ```{math} Langkah pertama
+  ```{math}
   :label: langkah_subtitusi_1
 
   2x + 4y = 28
@@ -143,7 +143,7 @@ Metode subtitusi bekerja dengan cara mengubah suatu variabel dengan variabel dar
 
   > Pilih variabel apapun (disini saya memilih $y$) untuk dipindahkan ke ruas kanan. Setelah hal ini dilakukan, maka persamaan di [langkah pertama](#langkah_subtitusi_1) akan menjadi seperti ini:
 
-  ```{math} Langkah kedua
+  ```{math}
   :label: langkah_subtitusi_2
 
   2x = 28 - 4y
@@ -153,7 +153,7 @@ Metode subtitusi bekerja dengan cara mengubah suatu variabel dengan variabel dar
 
   > Karena pada [langkah kedua](#langkah_subtitusi_2) memilih variabel $y$ untuk dipindahkan, maka koefisien pada variabel $x$ **akan dihilangkan** dengan cara **membagi masing-masing ruas** dengan koefisien yang dimiliki oleh $x$.
 
-  ```{math} Langkah ketiga (A)
+  ```{math}
   :label: langkah_subtitusi_3_a
 
   \frac{2x}{2} = \frac{28 - 4y}{2}
@@ -161,7 +161,7 @@ Metode subtitusi bekerja dengan cara mengubah suatu variabel dengan variabel dar
 
   > Pembagian pada ruas kanan **dilakukan terhadap seluruh ekspresi**. Sehingga berlaku sifat **distributif** pembagian:
 
-  ```{math} Langkah ketiga (B)
+  ```{math}
   :label: langkah_subtitusi_3b
 
   \frac{2x}{2} = \frac{28}{2} - \frac{4y}{2}
@@ -169,7 +169,7 @@ Metode subtitusi bekerja dengan cara mengubah suatu variabel dengan variabel dar
 
   > Dari proses perhitungan diatas, akan menghasilkan persamaan sebagai bentuk solusi dari variabel $x$
 
-  ```{math} Langkah ketiga (C)
+  ```{math}
   :label: langkah_subtitusi_3c
 
   x = 14 - 2y
@@ -179,7 +179,7 @@ Metode subtitusi bekerja dengan cara mengubah suatu variabel dengan variabel dar
 
   > Menggabungkan hasil dari [langkah ketiga](#langkah_subtitusi_3c) dengan [persamaan kedua](#persamaan_subtitusi_2). Yang dimana dengan cara mengganti variabel $x$ dengan persamaan
 
-  ```{math} Langkah keempat (A)
+  ```{math}
   :label: langkah_subtitusi_4a
 
   \begin{aligned}
@@ -190,7 +190,7 @@ Metode subtitusi bekerja dengan cara mengubah suatu variabel dengan variabel dar
 
   > Subtitusikan [kedua persamaan diatas](#langkah_subtitusi_4a), maka hasilnya adalah sebagai berikut:
 
-  ```{math} Langkah keempat (B)
+  ```{math}
   :label: langkah_subtitusi_4b
 
   3 (14 - 2y) + 2y = 22
@@ -201,7 +201,7 @@ Metode subtitusi bekerja dengan cara mengubah suatu variabel dengan variabel dar
 
   > Maka hasil dari [langkah keempat (B)](#langkah_subtitusi_4b) adalah:
 
-  ```{math} Langkah keempat (C)
+  ```{math}
   :label: langkah_subtitusi_4c
 
   42 - 6y + 2y = 22
@@ -209,7 +209,7 @@ Metode subtitusi bekerja dengan cara mengubah suatu variabel dengan variabel dar
 
   > Setelah proses sebelumnya selesai, maka selanjutnya adalah menjumlahkan $-6y + 2y$, karena kedua suku ini memiliki tipe variabel yang sama. Maka hasilnya adalah:
 
-  ```{math} Langkah keempat (D)
+  ```{math}
   :label: langkah_subtitusi_4d
 
   42 - 4y = 22
@@ -217,7 +217,7 @@ Metode subtitusi bekerja dengan cara mengubah suatu variabel dengan variabel dar
 
   > Karena disini mencari nilai dari variabel $y$, maka pindahkan $42$ ke ruas kanan. Serta, karena pada ruas kanan (setelah memindahkan $42$ ke ruas kanan) bertipe sama, maka dapat langsung dihitung hasilnya.
 
-  ```{math} Langkah keempat (E)
+  ```{math}
   :label: langkah_subtitusi_4e
 
   \begin{aligned}
@@ -228,7 +228,7 @@ Metode subtitusi bekerja dengan cara mengubah suatu variabel dengan variabel dar
 
   > Dikarenakan ingin mencari nilai dari variabel $y$, maka hilangkan koefisien pada variabel $y$. Prosesnya sama persis dengan [langkah ketiga (b)](#langkah_subtitusi_3b).
 
-  ```{math} Langkah keempat (F)
+  ```{math}
   :label: langkah_subtitusi_4f
 
   \frac{4y}{4} = \frac{-20}{4} \\
@@ -236,7 +236,7 @@ Metode subtitusi bekerja dengan cara mengubah suatu variabel dengan variabel dar
 
   > Maka dari proses perhitungan [diatas](#langkah_subtitusi_4f), didapatkan hasil:
 
-  ```{math} Langkah keempat (G)
+  ```{math}
   :label: langkah_subtitusi_4g
 
   y = 5
@@ -247,7 +247,7 @@ Metode subtitusi bekerja dengan cara mengubah suatu variabel dengan variabel dar
   > Setelah menemukan nilai dari variabel $y$ pada [proses keempat](#langkah_subtitusi_4g), maka selanjutnya adalah memasukkan angka $5$ pada variabel $x$. (Catatan: Masukkan nilai X dengan hasil dari [proses ketiga](#langkah_subtitusi_3c))
 
 
-  ```{math} Langkah kelima
+  ```{math}
   :label: langkah_subtitusi_5a
 
   \begin{aligned}
@@ -278,13 +278,13 @@ Misal, variabel pada **persamaan a** dan **persamaan b**. Agar dapat mencari nil
 
 > Tentukan nilai variabel $x$ dan $y$ dari persamaan berikut ini menggunakan metode eliminasi!
 
-```{math} Persamaan pertama
+```{math}
 :label: persamaan_eliminasi_1
 
 x + 2y = 20
 ```
 
-```{math} Persamaan kedua
+```{math}
 :label: persamaan_eliminasi_2
 
 2x + 3y = 33
@@ -303,7 +303,7 @@ x + 2y = 20
 
   > Dapat diketahui bahwa KPK dari $3$ dan $2$ adalah $6$, maka langkah selanjutnya adalah membagi angka $6$ dengan masing-masing koefisien.
 
-  ```{math} Bagi KPK dari $3$ dan $6$ dengan koefisien
+  ```{math}
   :label: langkah_eliminasi_1
 
   \begin{aligned}
@@ -316,7 +316,7 @@ x + 2y = 20
 
   > Untuk menyamakan koefisien $y$ menjadi $6$, setiap persamaan dikalikan dengan hasil KPK masing-masing.
 
-  ```{math} Proses perkalian dengan masing-masing hasil KPK
+  ```{math}
   :label: langkah_eliminasi_2a
 
   \begin{aligned}
@@ -330,7 +330,7 @@ x + 2y = 20
 
   > Maka hasil dari perkalian diatas adalah
 
-  ```{math} Hasil akhir dari perkalian
+  ```{math}
   :label: langkah_eliminasi_2b
 
   \begin{aligned}
@@ -408,16 +408,20 @@ x + 2y = 20
   ```{math}
   :label: langkah_eliminasi_4c
 
+  \begin{aligned}
   (2x + 4y) - (2x + 3y) &= 40 - 33 \\
   y &= 7
+  \end{aligned}
   ```
 
   > Lepaskan variabel $y$ dari koefisiennya.
 
   ```{math}
 
+  \begin{aligned}
   \frac{x}{1} &= \frac{7}{1} \\ \\
   x &= 7
+  \end{aligned}
   ```
 
   > Jadi nilai dari $y$ adalah $7$.
