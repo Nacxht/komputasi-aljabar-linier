@@ -3,6 +3,8 @@ title: Komputasi Aljabar Linier
 date: 2026-02-11
 ---
 
+## Pengertian
+
 Komputasi Aljabar Linier adalah sebuah metode yang **menggabungkan** antara Aljabar Linier dengan Komputasi. Tujuannya adalah **menyelesaikan** perhitungan aljabar linear yang kompleks dengan menggunakan komputer.
 
 ## Aljabar Linier

@@ -3,6 +3,8 @@ title: Persamaan Linier
 date: 2026-02-22
 ---
 
+## Pengertian
+
 Persamaan linier adalah sebuah persamaan aljabar, yang tiap sukunya menganndung **konstanta**, atau perkalian konstanta dengan **variabel tunggal**. Persamaan ini dapat dikatakan **linier** dikarenakan hubungan matematis ini dapat digambarkan sebagai garis lurus dalam **Sistem Koordinat Kartesius**.
 
 Setiap suku pada persamaan linier mengandung konstanta atau perkalian konstanta dengan variabel tunggal. Dalam persamaan liiner akan ada beberapa hal penting, seperti variabel, koefisien, dan juga konstanta.

@@ -1,7 +1,9 @@
 ---
-title: Membuat Persamaan Linier Menggunakan GeoGebra
-date: 2026-2-23
+title: GeoGebra
+date: 2026-02-23
 ---
+
+## Pengertian
 
 _GeoGebra_ adalah aplikasi interaktif yang ditujukan untuk pembelajaran dan mengajar dalam bidang matematika dan sains dari tingkat Sekolah Dasar hingga tingkat Universitas.
 

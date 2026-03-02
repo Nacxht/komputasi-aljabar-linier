@@ -19,6 +19,8 @@ project:
     - file: src/1_persamaan_linier/1_persamaan_linier.md
       children:
         - file: src/1_persamaan_linier/2_geogebra.md
+        - file: src/1_persamaan_linier/3_sagemath.md
+    - file: src/2_eliminasi_gauss/1_eliminasi_gauss.md
   
   # abaikan virtual environment anda (jika ada)
   exclude:
