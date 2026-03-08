@@ -100,10 +100,12 @@ Maka, langkah pertama adalah membuat matriks augmentasi dari persamaan diatas.
 Setelah membuat matriks augmentasi, maka langkah selanjutnya adalah mengeliminasi kolom pertama. Caranya adalah dengan menggunakna baris pertama sebagai pivot untuk menghilangkan elemen dibawahnya.
 
 ```{math}
-R_2 = R_2 - 2R_1 \\
-R_3 = R_3 - 3R_1 \\
-R_4 = R_4 - 4R_1 \\
-R_5 = R_5 - 5R_1 
+\begin{aligned}
+R_2 &= R_2 - 2R_1 \\
+R_3 &= R_3 - 3R_1 \\
+R_4 &= R_4 - 4R_1 \\
+R_5 &= R_5 - 5R_1 
+\end{aligned}
 ```
 
 Maka hasil akhir dari operasi diatas adalah sebagai berikut.
@@ -123,9 +125,11 @@ Maka hasil akhir dari operasi diatas adalah sebagai berikut.
 Setelah selesai mengeliminasi kolom kedua. Gunakan baris kedua sebagai pivot.
 
 ```{math}
-R_3 = R_3 - 2R_2 \\
-R_4 = R_4 - 3R_2 \\
-R_5 = R_5 - 4R_2
+\begin{aligned}
+R_3 &= R_3 - 2R_2 \\
+R_4 &= R_4 - 3R_2 \\
+R_5 &= R_5 - 4R_2
+\end{aligned}
 ```
 
 Maka hasil dari operasi diatas adalah sebagai berikut.
@@ -147,9 +151,11 @@ Baris-baris terakhir menjadi nol. Hal ini menunjukkan bahwa sistem persamaan ini
 Artinya, beberapa variabel dapat dipilih sebgai variabel bebas, lalu variabel lainnya dinyatakan dalam bentuk variabel tersebut.
 
 ```{math}
-x_5 = t \\
-x_4 = s \\
-x_3 = r
+\begin{aligned}
+x_5 &= t \\
+x_4 &= s \\
+x_3 &= r
+\end{aligned}
 ```
 
 ## Kesimpulan
