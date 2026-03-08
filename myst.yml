@@ -8,7 +8,6 @@ project:
     - name: Wildan Haydar Amru
       email: whaydaramru@gmail.com
       github: Nacxht
-      # linkedin: https://www.linkedin.com/in/whaydaramru
       affiliations:
         - id: utm
           institution: Universitas Trunojoyo Madura
@@ -16,21 +15,15 @@ project:
       
   toc:
     - file: src/komputasi_aljabar_linier.md
-    - file: src/1_persamaan_linier/1_persamaan_linier.md
+    - file: src/persamaan_linier.md
       children:
-        - file: src/1_persamaan_linier/2_geogebra.md
-        - file: src/1_persamaan_linier/3_sagemath.md
-    - file: src/2_eliminasi_gauss/1_eliminasi_gauss.md
+        - file: src/geogebra.md
+        - file: src/sagemath.md
+        - file: src/eliminasi_gauss.md
   
-  # abaikan virtual environment anda (jika ada)
   exclude:
-    - _venv/**
-    
-  # keywords: []
-  # github:
+    - venv/**
 site:
   template: book-theme
-  # title:
-  # options:
-  #   favicon: favicon.ico
-  #   logo: site_logo.png
+  title: Komputasi Aljabar Linier
+  

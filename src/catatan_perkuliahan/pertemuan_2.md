@@ -9,7 +9,7 @@
 
 ## SageMath
 
-- Method-method yang terdapat pada SageMathm
+- Method-method yang terdapat pada SageMath
 
 ## Latihan Soal
 

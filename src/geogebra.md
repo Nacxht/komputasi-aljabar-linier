@@ -14,7 +14,7 @@ Kita dapat menggunakan GeoGebra untuk memvisualisasikan persamaan linier, karena
 - Persamaan akan
 
 ```{math}
-:learn: contoh_persamaan_geogebra
+:label: contoh_persamaan_geogebra
 
 \begin{aligned}
 2x + 3y &= 33 \\
