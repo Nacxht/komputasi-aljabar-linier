@@ -14,6 +14,7 @@ project:
           department: Teknik Informatika
       
   toc:
+    - file: src/catatan_perkuliahan/pertemuan_4.md
     - file: src/komputasi_aljabar_linier.md
     - file: src/persamaan_linier.md
       children:
