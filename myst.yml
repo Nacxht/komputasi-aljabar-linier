@@ -19,6 +19,7 @@ project:
     - file: src/persamaan_linier.md
     - file: src/geogebra.md
     - file: src/eliminasi_gauss.md
+    - file: src/invers_matrix.md
   
   exclude:
     - venv/**

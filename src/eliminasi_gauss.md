@@ -198,7 +198,7 @@ Kita anggap:
 - $\text{b1}$ = baris 4
 - $\text{b1}$ = baris 5
 
-2. Baris 2 (Nolkan B2(K1))
+2. Baris 2 (Nolkan $\text{M}_{21}$)
 
 > Operasi: $-1 \times \text{b1} + \text{b2}$
 
@@ -212,7 +212,7 @@ $$
 \end{array}\right]
 $$
 
-3. Baris 3 (Nolkan B3(K1, K2))
+3. Baris 3 (Nolkan $\text{M}_{31}$ dan $\text{M}_{32}$)
 
 > Operasi 1: $-1 \times \text{b1} + \text{b3}$
 
@@ -238,7 +238,7 @@ $$
 \end{array}\right]
 $$
 
-4. Baris 4 (Nolkan B4(K1, K2, K3))
+4. Baris 4 (Nolkan $\text{M}_{41}$, $\text{M}_{42}$, dan $\text{M}_{43}$)
 
 > Operasi 1: $-1 \times \text{b1} + \text{b4}$
 
@@ -276,7 +276,7 @@ $$
 \end{array}\right]
 $$
 
-5. Baris 5 (Nolkan B5(K1, K2, K3, K4))
+5. Baris 5 (Nolkan $\text{M}_{51}$, $\text{M}_{52}$, ... , $\text{M}_{54}$)
 
 > Operasi 1: $-1 \times \text{b1} + \text{b5}$
 
