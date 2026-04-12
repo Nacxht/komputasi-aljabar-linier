@@ -17,10 +17,8 @@ project:
     - file: src/catatan_perkuliahan/pertemuan_4.md
     - file: src/komputasi_aljabar_linier.md
     - file: src/persamaan_linier.md
-      children:
-        - file: src/geogebra.md
-        - file: src/sagemath.md
-        - file: src/eliminasi_gauss.md
+    - file: src/geogebra.md
+    - file: src/eliminasi_gauss.md
   
   exclude:
     - venv/**

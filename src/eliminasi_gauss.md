@@ -5,9 +5,7 @@ date: 2026-03-02
 
 ## Pengertian
 
-Dalam aljabar linier, eliminasi gauss merupakan metode untuk menyelesaikan sistem persamaan linier. Metode ini bekerja dengan cara merubah persamaan menjadi matriks, dan menggunakan operasi pada matriks tersebut. Metode ini sangat berguna untuk menyelesaikan persamaan dengan banyak variabel.
-
-Konsep dari eliminasi gauss cukup sederhana, yaitu dengan cara menghilangkan/mengeliminasi variabel secara bertahap, hingga sistem persamaan berubah menjadi bentuk yang mudah diselesaikan, dan proses ini biasanya dilakukan dengan representasi matriks.
+Dalam aljabar linier, eliminasi gauss merupakan metode untuk menyelesaikan Sistem Persamaan Linier (SPL) dengan cara merubah SPL menjadi matriks. Tujuan dari eliminasi gauss adalah bentuk eselon baris. Terdapat teknik-teknik tersendiri untuk mencapai bentuk eselon baris.
 
 ## Representasi Sistem Persamaan Linier dalam Matriks
 
@@ -15,29 +13,21 @@ Sebagai contoh, terdapat sistem persamaan linier sebagai berikut.
 
 $$
 \begin{aligned}
-a_{11}x_1 + a_{12}x_2 + a_{13}x_3 &= b_1 \\
-a_{14}x_1 + a_{15}x_2 + a_{16}x_3 &= b_2 \\
-a_{17}x_1 + a_{18}x_2 + a_{19}x_3 &= b_3
+a_{1}x_{1} + b_{2}y_{1} + c_{3}z_{1} &= d_1 \\
+a_{1}x_{2} + b_{2}y_{2} + c_{3}z_{2} &= d_2 \\
+a_{1}x_{3} + b_{2}y_{3} + c_{3}z_{3} &= d_3
 \end{aligned}
 $$
 
-Jika persamaan diatas diubah ke bentuk matriks augmentasi, maka hasilnya adalah sebagai berikut.
+Jika persamaan diatas diubah ke bentuk matriks teraugmentasi (diperbesar), maka hasilnya adalah sebagai berikut.
 
 $$
-\begin{bmatrix}
-a_{11} & a_{12} & a_{13} & b_1 \\
-a_{14} & a_{15} & a_{16} & b_2 \\
-a_{17} & a_{18} & a_{19} & b_3
-\end{bmatrix}
+\left[\begin{array}{ccc|c}
+a_{1}x_{1} & b_{2}y_{1} & c_{3}z_{1} & d_1 \\
+a_{1}x_{2} & b_{2}y_{2} & c_{3}z_{2} & d_2 \\
+a_{1}x_{3} & b_{2}y_{3} & c_{3}z_{3} & d_3
+\end{array}\right]
 $$
-
-## Operasi Baris Elementer
-
-Eliminasi gauss menggunakan tiga operasi dasar yang disebut operasi baris elementer.
-
-1. Menukar dua baris
-2. Mengalikan satu baris dengan konstanta yang bukan nol
-3. Menambahkan kelipatan suatu baris ke baris lain
 
 ### Tujuan Eliminasi Gauss
 
@@ -48,199 +38,361 @@ Tujuan utama dari metode eliminasi gauss adalah mengubah matriks menjadi bentuk 
 
 Setelah matriks telah mencapai bentuk **eselon baris**, maka barulah solusi dapat diperoleh dengan metode substitusi balik.
 
-## Contoh Penyelesaian Sistem Persamaan dengan 5 Variabel
+## Operasi Baris Elementer
 
-Sebagai contoh, terdapat persamaan seebagai berikut.
+Terdapat tiga operasi dasar yang disebut operasi baris elementer untuk merubah matrix menjadi bentuk eselon baris, antara lain:
 
-$$
-\begin{aligned}
-x_1 + x_2 + x_3 + x_4 + x_5 &= 5 \\
-2x_1 + 3x_2 + x_3 + x_4 + x_5 &= 8 \\
-x_1 + 2x_2 + 3x_3 + x_4 + x_5 &= 9 \\
-x_1 + x_2 + 2x_3 + 3x_4 + x_5 &= 10 \\
-x_1 + x_2 + x_3 + 2x_4 + 3x_5 &= 11
-\end{aligned}
-$$
+1. Menukar dua baris
+2. Mengalikan satu baris dengan konstanta yang bukan nol
+3. Menambahkan kelipatan suatu baris ke baris lain
 
-### Membentuk Matrix Augmentasi
+## Contoh Penyelesaian SPLTV dengan Eliminasi Gauss
 
-Maka, langkah pertama adalah membuat matriks augmentasi dari persamaan diatas.
+### Soal
+
+Tentukan himpunan penyelesaian dari persamaan dibawah ini:
 
 $$
-\begin{bmatrix}
+x + y + z &= 6 \\
+x + 2y - z &= 2 \\
+2x - y + z &= 3
+$$
+
+### Langkah Penyelesaian
+
+1. Buat matrix teraugmentasi
+
+$$
+\left[\begin{array}{ccc|c}
+1 & 1 & 1 & 6 \\
+1 & 2 & -1 & 2 \\
+2 & -1 & 1 & 3
+\end{array}\right]
+$$
+
+Kita anggap:
+- $\text{b1}$ = Baris 1
+- $\text{b2}$ = Baris 2
+- $\text{b3}$ = Baris 3
+
+2. Baris 2 = $-1 \times \text{b1} + \text{b2}$
+
+$$
+\left[\begin{array}{ccc|c}
+1 & 1 & 1 & 6 \\
+0 & 1 & -2 & -4 \\
+2 & -1 & 1 & 3
+\end{array}\right]
+$$
+
+3. Baris 3 = $-2 \times \text{b1} + \text{b3}$
+
+$$
+\left[\begin{array}{ccc|c}
+1 & 1 & 1 & 6 \\
+0 & 1 & -2 & -4 \\
+0 & -3 & -1 & -9
+\end{array}\right]
+$$
+
+4. Baris 3 = $3 \times \text{b1} + \text{b3}$
+
+$$
+\left[\begin{array}{ccc|c}
+1 & 1 & 1 & 6 \\
+0 & 1 & -2 & -4 \\
+0 & 0 & -7 & -21
+\end{array}\right]
+$$
+
+5. Baris 3 = $\text{b3} \times (-\frac{1}{7})$
+
+$$
+\left[\begin{array}{ccc|c}
+1 & 1 & 1 & 6 \\
+0 & 1 & -2 & -4 \\
+0 & 0 & 1 & 3
+\end{array}\right]
+$$
+
+6. Subsitusi Balik
+
+Dari OBE sebelumnya, didapatkan:
+
+$$
+x + y + z &= 6 \\
+y - 2z &= -4 \\
+z &= 3
+$$
+
+> Variabel $z$
+
+$$
+z &= 3
+$$
+
+> Variabel $y$
+
+$$
+y - 2z &= -4 \\
+y - 2(3) &= -4 \\
+y - 6 &= -4 \\
+y &= -4 + 6 \\
+y &= 2
+$$
+
+> Variabel $z$
+
+$$
+x + y + z &= 6 \\
+x + 2 + 3 &= 6 \\
+x + 5 &= 6 \\
+x &= 6 - 5 \\
+x &= 1
+$$
+
+7. Himpunan Penyelesaian
+
+> Solusi:
+
+$$
+x &= 1 \\
+y &= 2 \\
+z &= 3
+$$
+
+> Maka, himpunan penyelesaiannya adalah $\{1, 2, 3\}$
+
+## Contoh Penyelesaian SPL Lima Variabel dengan Eliminasi Gauss
+
+### Soal
+
+Tentukan himpunan penyelesaian dari sistem persamaan linear berikut:
+
+$$
+a + b + c + d + e &= 5 \\
+a + 2b + 2c + 2d + 2e &= 9 \\
+a + 2b + 3c + 3d + 3e &= 12 \\
+a + 2b + 3c + 4d + 4e &= 14 \\
+a + 2b + 3c + 4d + 5e &= 15
+$$
+
+### Langkah Penyelesaian
+
+1. Buat matriks teraugmentasi
+
+$$
+\left[\begin{array}{ccccc|c}
 1 & 1 & 1 & 1 & 1 & 5 \\
-2 & 3 & 1 & 1 & 1 & 8 \\
-1 & 2 & 3 & 1 & 1 & 9 \\
-1 & 1 & 2 & 3 & 1 & 10 \\
-1 & 1 & 1 & 2 & 3 & 11
-\end{bmatrix}
+1 & 2 & 2 & 2 & 2 & 9 \\
+1 & 2 & 3 & 3 & 3 & 12 \\
+1 & 2 & 3 & 4 & 4 & 14 \\
+1 & 2 & 3 & 4 & 5 & 15
+\end{array}\right]
 $$
 
-### Mengeliminasi Kolom Pivot Pertama
+Kita anggap:
+- $\text{b1}$ = baris 1
+- $\text{b1}$ = baris 2
+- $\text{b1}$ = baris 3
+- $\text{b1}$ = baris 4
+- $\text{b1}$ = baris 5
+
+2. Baris 2 (Nolkan B2(K1))
+
+> Operasi: $-1 \times \text{b1} + \text{b2}$
 
 $$
-\begin{bmatrix}
+\left[\begin{array}{ccccc|c}
 1 & 1 & 1 & 1 & 1 & 5 \\
-0 & 1 & -1 & -1 & -1 & -2 \\
-0 & 1 & 2 & 0 & 0 & 4 \\
-0 & 0 & 1 & 2 & 0 & 5 \\
-0 & 0 & 0 & 1 & 2 & 6
-\end{bmatrix}
+0 & 1 & 1 & 1 & 1 & 4 \\
+1 & 2 & 3 & 3 & 3 & 12 \\
+1 & 2 & 3 & 4 & 4 & 14 \\
+1 & 2 & 3 & 4 & 5 & 15
+\end{array}\right]
 $$
 
-Detail langkah:
-1. $\text{Baris 2} - 2 \times \text{Baris 1}$
-2. $\text{Baris 3} - \text{Baris 1}$
-3. $\text{Baris 4} - \text{Baris 1}$
-4. $\text{Baris 5} - \text{Baris 1}$
+3. Baris 3 (Nolkan B3(K1, K2))
 
-### Mengeliminasi Kolom Pivot Kedua
+> Operasi 1: $-1 \times \text{b1} + \text{b3}$
 
 $$
-\begin{bmatrix}
+\left[\begin{array}{ccccc|c}
 1 & 1 & 1 & 1 & 1 & 5 \\
-0 & 1 & -1 & -1 & -1 & -2 \\
-0 & 0 & 3 & 1 & 1 & 6 \\
-0 & 0 & 1 & 2 & 0 & 5 \\
-0 & 0 & 0 & 1 & 2 & 6
-\end{bmatrix}
+0 & 1 & 1 & 1 & 1 & 4 \\
+0 & 1 & 2 & 2 & 2 & 7 \\
+1 & 2 & 3 & 4 & 4 & 14 \\
+1 & 2 & 3 & 4 & 5 & 15
+\end{array}\right]
 $$
 
-Detail langkah:
-1. $\text{Baris 3} - \text{Baris 2}$
-
-### Mengeliminasi Kolom Pivot Ketiga
+> Operasi 2: $-1 \times \text{b2} + \text{b3}$
 
 $$
-\begin{bmatrix}
+\left[\begin{array}{ccccc|c}
 1 & 1 & 1 & 1 & 1 & 5 \\
-0 & 1 & -1 & -1 & -1 & -2 \\
-0 & 0 & 3 & 1 & 1 & 6 \\
-0 & 0 & 0 & \frac{5}{3} & -\frac{1}{3} & \frac{7}{3} \\
-0 & 0 & 0 & 1 & 2 & 6
-\end{bmatrix}
+0 & 1 & 1 & 1 & 1 & 4 \\
+0 & 0 & 1 & 1 & 1 & 3 \\
+1 & 2 & 3 & 4 & 4 & 14 \\
+1 & 2 & 3 & 4 & 5 & 15
+\end{array}\right]
 $$
 
-Detail langkah:
-1. $\text{Baris 4} - \frac{1}{3} \times \text{Baris 3}$
+4. Baris 4 (Nolkan B4(K1, K2, K3))
 
-### Mengeliminasi Kolom Pivot Keempat
+> Operasi 1: $-1 \times \text{b1} + \text{b4}$
 
 $$
-\begin{bmatrix}
+\left[\begin{array}{ccccc|c}
 1 & 1 & 1 & 1 & 1 & 5 \\
-0 & 1 & -1 & -1 & -1 & -2 \\
-0 & 0 & 3 & 1 & 1 & 6 \\
-0 & 0 & 0 & 1 & -\frac{1}{5} & \frac{7}{5} \\
-0 & 0 & 0 & 0 & \frac{11}{5} & \frac{13}{5}
-\end{bmatrix}
+0 & 1 & 1 & 1 & 1 & 4 \\
+0 & 0 & 1 & 1 & 1 & 3 \\
+0 & 1 & 2 & 3 & 3 & 9 \\
+1 & 2 & 3 & 4 & 5 & 15
+\end{array}\right]
 $$
 
-Detail langkah:
-1. $\text{Baris 5} - \text{Baris 4}$
-
-### Substitusi Balik
-
-1. Dari variabel $x_5$:
+> Operasi 2: $-1 \times \text{b2} + \text{b4}$
 
 $$
-\begin{aligned}
-\frac{11}{5}x_5 &= \frac{13}{5} \\
-x_5 &= \frac{13}{5} \times \frac{5}{11} \\
-x_5 &= \frac{13}{11}
-\end{aligned}
+\left[\begin{array}{ccccc|c}
+1 & 1 & 1 & 1 & 1 & 5 \\
+0 & 1 & 1 & 1 & 1 & 4 \\
+0 & 0 & 1 & 1 & 1 & 3 \\
+0 & 0 & 1 & 2 & 2 & 5 \\
+1 & 2 & 3 & 4 & 5 & 15
+\end{array}\right]
 $$
 
-2. Dari variabel $x_4$:
+> Operasi 3: $-1 \times \text{b3} + \text{b4}$
 
 $$
-\begin{aligned}
-x_4 - \frac{1}{5}x_5 &= \frac{7}{5} \\
-x_4 &= \frac{7}{5} + \frac{1}{5} \times \frac{13}{11} \\
-x_4 &= \frac{7}{5} + \frac{13}{55} \\
-x_4 &= \frac{77}{55} + \frac{13}{55} \\
-x_4 &= \frac{90}{55} \\
-x_4 &= \frac{18}{11}
-\end{aligned}
+\left[\begin{array}{ccccc|c}
+1 & 1 & 1 & 1 & 1 & 5 \\
+0 & 1 & 1 & 1 & 1 & 4 \\
+0 & 0 & 1 & 1 & 1 & 3 \\
+0 & 0 & 0 & 1 & 1 & 2 \\
+1 & 2 & 3 & 4 & 5 & 15
+\end{array}\right]
 $$
 
-3. Dari variabel $x_3$:
+5. Baris 5 (Nolkan B5(K1, K2, K3, K4))
+
+> Operasi 1: $-1 \times \text{b1} + \text{b5}$
 
 $$
-\begin{aligned}
-3x_3 + 1x_4 + 1x_5 &= 6 \\
-3x_3 + \frac{18}{11} + \frac{13}{11} &= 6 \\
-3x_3 + \frac{31}{11} &= 6 \\
-3x_3 &= 6 - \frac{31}{11} \\
-3x_3 &= \frac{66}{11} - \frac{31}{11} \\
-3x_3 &= \frac{35}{11} \\
-x_3 = \frac{35}{33}
-\end{aligned}
+\left[\begin{array}{ccccc|c}
+1 & 1 & 1 & 1 & 1 & 5 \\
+0 & 1 & 1 & 1 & 1 & 4 \\
+0 & 0 & 1 & 1 & 1 & 3 \\
+0 & 0 & 0 & 1 & 1 & 2 \\
+0 & 1 & 2 & 3 & 4 & 10
+\end{array}\right]
 $$
 
-4. Dari variabel $x_2$:
+> Operasi 2: $-1 \times \text{b2} + \text{b5}$
 
 $$
-\begin{aligned}
-x_2 - 1x_3 - 1x_4 - 1x_5 &= -2 \\
-x_2 - \frac{35}{33} - \frac{18}{11} - \frac{13}{11} &= -2 \\
-x_2 - \frac{35}{33} - \frac{54}{33} - \frac{39}{33} &= -2 \\
-x_2 - \frac{128}{33} &= -2 \\
-x_2 &= -2 + \frac{128}{33} \\
-x_2 &= -\frac{66}{33} + \frac{128}{33} \\
-x_2 = \frac{62}{33}
-\end{aligned}
+\left[\begin{array}{ccccc|c}
+1 & 1 & 1 & 1 & 1 & 5 \\
+0 & 1 & 1 & 1 & 1 & 4 \\
+0 & 0 & 1 & 1 & 1 & 3 \\
+0 & 0 & 0 & 1 & 1 & 2 \\
+0 & 0 & 1 & 2 & 3 & 6
+\end{array}\right]
 $$
 
-5. Dari variabel $x_1$:
+> Operasi 3: $-1 \times \text{b3} + \text{b5}$
 
 $$
-\begin{aligned}
-x_1 + 1x_2 + 1x_3 + 1x_4 + 1x_5 &= 5 \\
-x_1 + \frac{62}{33} + \frac{35}{33} + \frac{18}{11} + \frac{13}{11} &= 5 \\
-x_1 + \frac{62}{33} + \frac{35}{33} + \frac{54}{33} + \frac{39}{33} &= 5 \\
-x_1 + \frac{190}{33} &= 5 \\
-x_1 &= 5 - \frac{190}{33} \\
-x_1 &= \frac{165}{33} - \frac{190}{33} \\
-x_1 = -\frac{25}{33}
-\end{aligned}
+\left[\begin{array}{ccccc|c}
+1 & 1 & 1 & 1 & 1 & 5 \\
+0 & 1 & 1 & 1 & 1 & 4 \\
+0 & 0 & 1 & 1 & 1 & 3 \\
+0 & 0 & 0 & 1 & 1 & 2 \\
+0 & 0 & 0 & 1 & 2 & 3
+\end{array}\right]
 $$
 
-### Solusi Akhir
+> Operasi 4: $-1 \times \text{b4} + \text{b5}$
 
 $$
-\begin{aligned}
-x_1 &= -\frac{25}{33} \\
-x_2 &= \frac{62}{33} \\
-x_3 &= \frac{35}{33} \\
-x_4 &= \frac{18}{11} \\
-x_5 &= \frac{13}{11}
-\end{aligned}
+\left[\begin{array}{ccccc|c}
+1 & 1 & 1 & 1 & 1 & 5 \\
+0 & 1 & 1 & 1 & 1 & 4 \\
+0 & 0 & 1 & 1 & 1 & 3 \\
+0 & 0 & 0 & 1 & 1 & 2 \\
+0 & 0 & 0 & 0 & 1 & 1
+\end{array}\right]
 $$
 
-Pembuktian:
+5. Substitusi Balik
+
+Dari OBE sebelumnya, didapatkan:
 
 $$
-\begin{aligned}
-x_1 + x_2 + x_3 + x_4 + x_5 &= -\frac{25}{33} + \frac{62}{33} + \frac{35}{33} + \frac{18}{11} + \frac{13}{11} \\
-&= \frac{72}{33} + \frac{31}{11} \\
-&= \frac{72}{33} + \frac{93}{33} \\
-&= \frac{165}{33} \\
-&= 5
-\end{aligned}
-$$ 
-
-Pembuktian 2:
-
-$$
-\begin{aligned}
-2x_1 + 3x_2 + x_3 + x_4 + x_5 &= 2 \times -\frac{25}{33} + 3 \times \frac{62}{33} + \frac{35}{33} + \frac{18}{11} + \frac{13}{11} \\
-&= \frac{-50 + 186 + 35 + 54 + 39}{33} \\
-&= \frac{264}{33} \\
-&= 8
-\end{aligned}
+a + b + c + d + e &= 5 \\
+b + c + d + e &= 4 \\
+c + d + e &= 3 \\
+d + e &= 2 \\
+e &= 1
 $$
 
-### Kesimpulan Persamaan
+> Variabel $e$
 
-Persamaan ini merupakan tipe persamaan linier yang memiliki satu solusi.
+$$
+e &= 1
+$$
+
+> Variabel $d$
+
+$$
+d + e &= 2 \\
+d + 1 &= 2 \\
+d &= 2 - 1 \\
+d &= 1
+$$
+
+> Variabel $c$
+
+$$
+c + d + e &= 3 \\
+c + 1 + 1 &= 3 \\
+c + 2 &= 3 \\
+c &= 3 - 2 \\
+c &= 1
+$$
+
+> Variabel $b$
+
+$$
+b + c + d + e &= 4 \\
+b + 1 + 1 + 1 &= 4 \\
+b + 3 &= 4 \\
+b &= 4 - 3 \\
+b &= 1
+$$
+
+> Variabel $a$
+
+$$
+a + b + c + d + e &= 5 \\
+a + 1 + 1 + 1 + 1 &= 5 \\
+a + 4 &= 5 \\
+a &= 5 - 4 \\
+a &= 1 \\
+$$
+
+6. Himpunan Penyelesaian
+
+> Solusi:
+
+$$
+a &= 1 \\
+b &= 1 \\
+c &= 1 \\
+d &= 1 \\
+e &= 1
+$$
+
+> Maka, himpunan penyelesaiannya adalah ${1, 1, 1, 1, 1}$
