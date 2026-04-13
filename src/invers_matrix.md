@@ -211,7 +211,7 @@ $$
 \end{bmatrix}
 $$
 
-Gunakan rumus determinan 3x3:
+> Gunakan rumus determinan 3x3:
 
 $$
 = 2(3 \cdot 2 - 1 \cdot 1)
@@ -237,7 +237,7 @@ $$
 
 ### Hasil Singkat 4x4
 
-(Setelah dihitung semua bagian)
+> (Setelah dihitung semua bagian)
 
 $$
 \det(M_{11}) = 0
@@ -262,7 +262,7 @@ Dengan cara yang sama:
 - Hitung $C_{14}$
 - Hitung $C_{15}$
 
-(Hasil lengkap biasanya panjang, jadi disingkat)
+> Hasil disingkat
 
 ---
 
@@ -274,7 +274,7 @@ $$
 \det(A) = 4
 $$
 
-> (Nilai tidak nol → matriks memiliki invers)
+> Nilai tidak nol, berarti matriks memiliki invers
 
 ---
 
@@ -332,12 +332,3 @@ A^{-1} =
 \frac{1}{4} & \frac{1}{4} & -\frac{1}{4} & -\frac{1}{2} & \frac{1}{2}
 \end{bmatrix}
 $$
-
----
-
-## Catatan
-
-- Proses di atas menunjukkan alur asli (manual)
-- Tidak semua langkah ditulis detail karena sangat panjang
-- Dalam praktik, lebih sering pakai Gauss-Jordan
-- Yang penting: pahami alurnya, bukan hafal semua hitungan
