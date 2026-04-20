@@ -19,6 +19,7 @@ project:
     - file: src/geogebra.md
     - file: src/eliminasi_gauss.md
     - file: src/invers_matrix.md
+    - file: src/evaluasi_determinan_dan_invers.md
   
   exclude:
     - venv/**
