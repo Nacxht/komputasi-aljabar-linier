@@ -229,3 +229,6 @@ $$
 % 
 &= 16
 $$ 
+
+Note:
+> sek urung mari pak
