@@ -70,7 +70,7 @@ Maka:
 $$
 det (\text{a}) &= 0 (-2) - 2 (1) - 3 (0) \\
 &= 0 - 2 - 0 \\
-&= 2
+&= -2
 $$
 
 ---
@@ -587,6 +587,38 @@ C_{34} &= (-1)^{3+4} \cdot
 \end{bmatrix}
 %
 = -1 \cdot ((1 \cdot ((1 \cdot 1) - (1 \cdot 1))) - (-3) \cdot ((1 \cdot 1) - (1 \cdot 1)) + 1 \cdot ((1 \cdot 1) - (1 \cdot 1))) = 0 \\\\
+C_{41} &= (-1)^{4+1} \cdot
+\begin{bmatrix}
+-3 & 1 & 1 \\
+1 & -3 & 1 \\
+1 & 1 & -3
+\end{bmatrix}
+%
+= -1 \cdot ((-3 \cdot ((-3 \cdot -3) - (1 \cdot 1))) - 1 \cdot ((1 \cdot -3) - (1 \cdot 1)) + 1 \cdot ((1 \cdot 1) - (1 \cdot -3))) = -16 \\\\
+C_{42} &= (-1)^{4+2} \cdot
+\begin{bmatrix}
+1 & 1 & 1 \\
+1 & -3 & 1 \\
+1 & 1 & -3
+\end{bmatrix}
+%
+= 1 \cdot ((1 \cdot ((-3 \cdot -3) - (1 \cdot 1))) - 1 \cdot ((1 \cdot -3) - (1 \cdot 1)) + 1 \cdot ((1 \cdot 1) - (1 \cdot -3))) = 8 \\\\
+C_{43} &= (-1)^{4+3} \cdot
+\begin{bmatrix}
+1 & -3 & 1 \\
+1 & 1 & 1 \\
+1 & 1 & -3
+\end{bmatrix}
+%
+= -1 \cdot ((1 \cdot ((1 \cdot -3) - (1 \cdot 1))) - (-3) \cdot ((1 \cdot -3) - (1 \cdot 1)) + 1 \cdot ((1 \cdot 1) - (1 \cdot 1))) = -16 \\\\
+C_{44} &= (-1)^{4+4} \cdot
+\begin{bmatrix}
+1 & -3 & 1 \\
+1 & 1 & 1 \\
+1 & 1 & -3
+\end{bmatrix}
+%
+= 1 \cdot ((1 \cdot ((1 \cdot -3) - (1 \cdot 1))) - (-3) \cdot ((1 \cdot -3) - (1 \cdot 1)) + 1 \cdot ((1 \cdot 1) - (1 \cdot 1))) = 0
 $$
 
 Selanjutnya, kita dapat menyusun matriks kofaktor:
