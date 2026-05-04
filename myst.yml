@@ -20,10 +20,28 @@ project:
     - file: src/eliminasi_gauss.md
     - file: src/invers_matrix.md
     - file: src/evaluasi_determinan_dan_invers.md
+    - file: src/implementasi_transformasi.ipynb
   
   exclude:
     - venv/**
 site:
   template: book-theme
   title: Komputasi Aljabar Linier
+
+# Binder configuration
+launch_buttons:
+  notebook_interface: "classic"
+  binderhub_url: "https://mybinder.org"
+
+# Thebe configuration for interactive cells
+sphinx:
+  config:
+    html_js_files:
+      - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js
+    suppress_warnings: ["mystnb.unknown_mime_type"]
+
+# For Plotly compatibility
+html:
+  use_issues_button: true
+  use_repository_button: true
   
