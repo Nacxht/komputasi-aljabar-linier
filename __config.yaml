@@ -1,0 +1,9 @@
+execute:
+  execute_notebooks: auto
+
+html:
+  use_jupyterlab: true
+
+sphinx:
+  config:
+    nb_execution_mode: "auto"
