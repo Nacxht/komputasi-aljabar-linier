@@ -22,6 +22,7 @@ project:
     - file: src/evaluasi_determinan_dan_invers.md
     - file: src/implementasi_transformasi.ipynb
     - file: src/eigenvalue.ipynb
+    - file: src/eigenfaces/eigenfaces.ipynb
   
   exclude:
     - venv/**
