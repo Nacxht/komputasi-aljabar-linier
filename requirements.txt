@@ -1,0 +1,6 @@
+jupyter-book>=2.0.0
+plotly
+numpy
+matplotlib
+opencv-python
+scikit-learn
