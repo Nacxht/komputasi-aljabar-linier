@@ -1,6 +1,5 @@
 ---
 title: Eliminasi Gauss
-date: 2026-03-02
 ---
 
 ## Pengertian
@@ -163,7 +162,7 @@ $$
 
 > Maka, himpunan penyelesaiannya adalah $\{1, 2, 3\}$
 
-## Contoh Penyelesaian SPL Lima Variabel dengan Eliminasi Gauss
+<!-- ## Contoh Penyelesaian SPL Lima Variabel dengan Eliminasi Gauss
 
 ### Soal
 
@@ -395,4 +394,4 @@ d &= 1 \\
 e &= 1
 $$
 
-> Maka, himpunan penyelesaiannya adalah ${1, 1, 1, 1, 1}$
+> Maka, himpunan penyelesaiannya adalah ${1, 1, 1, 1, 1}$ -->

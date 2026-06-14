@@ -14,15 +14,42 @@ project:
           department: Teknik Informatika
       
   toc:
-    - file: src/komputasi_aljabar_linier.md
-    - file: src/persamaan_linier.md
-    - file: src/geogebra.md
-    - file: src/eliminasi_gauss.md
-    - file: src/invers_matrix.md
-    - file: src/evaluasi_determinan_dan_invers.md
-    - file: src/implementasi_transformasi.ipynb
-    - file: src/eigenvalue.ipynb
-    - file: src/eigenfaces/eigenfaces.ipynb
+    - title: Pendahuluan
+      file: src/1_pendahuluan/komputasi_aljabar_linier.md
+      
+    - title: Sistem Persamaan Linier
+      children:
+        - file: src/2_sistem_persamaan_linier/persamaan_linier.md
+        - file: src/2_sistem_persamaan_linier/geogebra.md
+        - file: src/2_sistem_persamaan_linier/sagemath.md
+    
+    - title: Eliminasi Gauss
+      children:
+        - file: src/3_eliminasi_gauss/eliminasi_gauss.md
+        - file: src/3_eliminasi_gauss/tugas_4.md
+        - file: src/3_eliminasi_gauss/tugas_5.md
+    
+    - title: Determinan, Adjoin, dan Invers Matrix
+      children:
+        - file: src/4_determinan_adjoin_invers/determinan_adjoin_invers.md
+        - file: src/4_determinan_adjoin_invers/invers_matriks.md
+        - file: src/4_determinan_adjoin_invers/tugas_adjoin.md
+        - file: src/4_determinan_adjoin_invers/tugas_evaluasi_determinan_dan_invers.md
+      
+    - title: Transformasi Linier
+      children:
+        - file: src/5_transformasi_linier/tugas_transformasi.ipynb
+        - file: src/5_transformasi_linier/tugas_eigenvalue_eigenvector.ipynb
+        - file: src/5_transformasi_linier/eigenfaces/tugas_eigenfaces.ipynb
+    
+    - title: Operasi Dasar Matriks
+      children:
+        - file: src/6_operasi_dasar_matriks/penjumlahan_matriks.md
+        - file: src/6_operasi_dasar_matriks/pengurangan_matriks.md
+        - file: src/6_operasi_dasar_matriks/perkalian_matriks.md
+        - file: src/6_operasi_dasar_matriks/pembagian_matriks.md
+
+    
   
   exclude:
     - venv/**

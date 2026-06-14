@@ -1,6 +1,5 @@
 ---
-title: Komputasi Aljabar Linier
-date: 2026-02-11
+title: Pendahuluan Komputasi Aljabar Linier
 ---
 
 ## Pengertian
